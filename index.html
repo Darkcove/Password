@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous">
+    <link rel='stylesheet' href='styles.css'>
+
+    <title>Generator</title>
+
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <a href="#" class="navbar-brand">Advanced Random Password Generator</a>
+    </nav>
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-sm-12 mx-auto">
+
+          <div class="content">
+            <h4>Random Password Generator</h4>
+            <br />
+            <input type="text" id='display'>
+            <br />
+            <input type="range" min='0' max='50' name='slider' id='slider'>
+            <br />
+            <button onClick='generate()'>Generate</button>
+            <button onClick='copyPassword()'>Copy To Clipboard</button>
+            <div id="Length"></div>
+          </div>
+
+          <div class="previous_passwords">
+            <b>Previously Generated Passwords</b>
+            <br />
+            <div id="lastNums">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src='script.js'></script>
+  </body>
+
+</html>
